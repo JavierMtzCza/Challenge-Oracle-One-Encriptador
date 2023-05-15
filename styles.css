@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background: #FE7000;
+}
+
+#main-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#logo {
+    position: absolute;
+    width: 105px;
+    height: 50px;
+    left: 10px;
+    top: 32px;
+}
+
+#left-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+}
+
+#textToEncrypt {
+    width: 500px;
+    height: 400px;
+    
+    font-size: 25px;
+    color: #ffffff;
+    background: #FE7000;
+    border: none;
+    text-transform: lowercase;
+    resize: none;
+
+    position: absolute;
+    left: 10%;
+    top: 20%;
+}::placeholder{ color: #ffffff; }
+
+#textToEncrypt:focus{
+    outline: none;
+}
+
+#btns-container {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 10px 30px 10px;
+    gap: 100px;
+    justify-content: space-evenly;
+
+    position: absolute;
+    left: 14%;
+    bottom: 5%;
+}
+
+#btn-encrypt {
+    background: #F4A261;
+    color: #FFFFFF;
+}
+
+#btn-decrypt {
+    background: #F5E5D8;
+    color: #FEB400;
+}
+
+#img-pass {
+    width: 280px;
+    height: 290px;
+    margin: 1% 1% 1% 4%;
+}
+
+
+#rigth-container{
+    height: 500px;
+    width: 100%;
+}
+
+#backTextEncrypted{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    position: absolute;
+    width: 30%;
+    height: 85%;
+    right: 6%;
+    top: 5%;
+
+    border-radius: 32px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+#textEncrypted{
+
+    width: 90%;
+    height: 70%;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #000000;
+
+    background-image: url("./src/undraw_security_re_a2rk.svg");
+    background-repeat: round;
+    resize: none;
+    border: none;
+}
+
+#textNotify{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#textNotify > *{
+    color: #6b6a6a;
+}
+
+
+#btn-copy {
+    background: #ffa621;
+    border-radius: 24px;
+    color: #ffffff;
+    visibility: hidden;
+}
+
+button {
+    height: 45px;
+    width: 200px;
+    font-size: 19px;
+    border: none;
+    border-radius: 24px;
+}
+
+button:hover {
+    animation: pulse 2s infinite;
+    transition: .3s;
+    background-color: rgb(218, 209, 209);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    70% {
+        transform: scale(.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
